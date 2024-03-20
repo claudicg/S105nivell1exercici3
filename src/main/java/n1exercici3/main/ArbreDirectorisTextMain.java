@@ -6,8 +6,13 @@ public class ArbreDirectorisTextMain {
 
 	public static void main(String[] args) {
 		
+		String path = "";
+		if(args.length == 1) {
+			path = args[0];	
+		}
+		
 		ArbreDirectoriText demo = new ArbreDirectoriText();
-		demo.escriureDirectoriTxt(demo.ordernarDirectori("src/main/resources"));
+		demo.escriureDirectoriTxt(demo.ordernarDirectori(path));
 
 	}
 
